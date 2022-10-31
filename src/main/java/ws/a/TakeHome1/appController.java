@@ -5,6 +5,7 @@
 package ws.a.TakeHome1;
 
 import java.io.IOException;
+import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,14 @@ public class appController
                 Model Courier
                 )throws IOException
     {
+        byte[] imagebyte = data3.getBytes();
+        String imagestringbase64 = Base64.encodeBase64String(imagebyte);
+        String imgpath = "data:image/png;base64,".concat(imagestringbase64);
+        
+        Courier.addAttribute("pakage1", data1);
+        Courier.addAttribute("pakage2", data2);
+        Courier.addAttribute("pakage3", imgpath);
+        
         return "viewpage";
     }
 }
