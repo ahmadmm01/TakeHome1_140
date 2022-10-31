@@ -8,14 +8,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Web Service Development A</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td
+            {
+                padding:   20px
+            }
+        </style>
     </head>
     <body>
-        <h1>HiLiNg</h1>
-        <hr/>
-    <l th:text="${pakage1}"></l>
-    <br/><br/>
-    <l th:text="${pakage2}"></l>
-    <br/><br/>
-    <img th:src="${pakage3}">
+    <center>
+        <table border="1px solid black">
+            <tr>
+                <td>
+            <center><h1>HiLiNg</h1></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    NaMa : <l th:text="${pakage1}"></l>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LoKaSi : <l th:text="${pakage2}"></l>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img th:src="${pakage3}" width="100%">
+                </td>
+            </tr>
+        </table>
+        </center>
     </body>
 </html>

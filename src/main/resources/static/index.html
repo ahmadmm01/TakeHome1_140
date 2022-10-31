@@ -8,19 +8,44 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Web Service Development A</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td
+            {
+                padding:   20px
+            }
+        </style>
     </head>
     <body>
-        <h1>HiLiNg</h1>
-        <hr/>
-        <form action="/nexthalaman" method="post" enctype="multipart/form-data" >
-            <br/>
-            NaMa : <input type="text" name="varA" required=""/>
-            <br/><br/><br/>
-            LoKaSi : <input type="text" name="varB" required=""/>
-            <br/><br/><br/>
-            GaMbAr : <input type="file" name="varC" accept="image/png, image/jpeg" required=""/>
-            <br/><br/><br/>
-            <input type="submit" value="SaVe"/>
-        </form>
+        <center>
+            <table border="1px solid black">
+            <tr>
+                <td>
+            <center><h1>HiLiNg</h1></center>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <form action="/nexthalaman" method="post" enctype="multipart/form-data">
+                                NaMa : <input type="text" name="varA" required=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                LoKaSi : <input type="text" name="varB" required=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GaMbAr : <input type="file" name="varC" accept="image/png, image/jpeg" required=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center><input type="submit" value="SaVe"/></center>
+                            </td>
+                        </tr>
+                    </form>
+            </table>
+        </center>
     </body>
 </html>
